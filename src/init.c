@@ -33,7 +33,7 @@
 #include <sys/socket.h>
 #include <netdb.h>
 #include <netinet/in.h>
-#ifdef __NetBSD__
+#if defined(__NetBSD__) || defined(__OpenBSD__)
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #endif
